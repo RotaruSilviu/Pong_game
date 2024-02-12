@@ -17,7 +17,6 @@ class Ball(Turtle):
         new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
 
-    ### Inversam astfel unghiul la care se misca mingea, inmultind cu unu schimbam semnul din plus in minus si invers.
     def bounce_y(self):
         self.y_move *= -1
         self.move_speed *= 0.9
