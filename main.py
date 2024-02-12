@@ -40,11 +40,9 @@ while game_is_on:
 
     # TODO 7: Detect when paddle misses.
     # TODO 8: Keep score.
-    # detect right
     if ball.xcor() > 390:
         ball.reset_position()
         scoreboard.l_point()
-    # detect left
     if ball.xcor() < -390:
         ball.reset_position()
         scoreboard.r_point()
